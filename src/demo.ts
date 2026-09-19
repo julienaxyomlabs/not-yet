@@ -8,7 +8,7 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { gate, type Ask } from "./gate.js";
 import { DEMO_TOOLS } from "./tools.js";
-import { askOnTerminal, type Choice } from "./approve.js";
+import { askOnTerminal, closeKeys, type Choice } from "./approve.js";
 import type { ToolCall } from "./types.js";
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -84,6 +84,7 @@ export async function runDemo(argv: string[]): Promise<void> {
   say("");
   say(dim(`events → ${path.join(process.env.NOTYET_HOME!, "events.jsonl")}`));
   say("");
+  closeKeys();
   if (transcriptPath) fs.writeFileSync(transcriptPath, JSON.stringify(transcript, null, 1));
   if (!argv.includes("--keep")) fs.rmSync(root, { recursive: true, force: true });
 }
