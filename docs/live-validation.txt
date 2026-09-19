@@ -1,0 +1,23 @@
+NOT YET — LIVE VALIDATION
+
+safe path        PASS
+reject path      PASS
+approve path     PASS
+mcp path         PASS
+exact-once       PASS
+event log        PASS
+production risk  NONE — local disposable resources only
+
+sandbox(s):
+  safe     /private/var/folders/gk/sjhvp7853c53x3_gm0m4f30r0000gn/T/notyet-live/run-0919T124317/safe/proj  origin ../origin.git  3f25870 → 3f25870  pushes during tests 0
+  reject   /private/var/folders/gk/sjhvp7853c53x3_gm0m4f30r0000gn/T/notyet-live/run-0919T124317/reject/proj  origin ../origin.git  bf4ad19 → bf4ad19  pushes during tests 0
+  approve  /private/var/folders/gk/sjhvp7853c53x3_gm0m4f30r0000gn/T/notyet-live/run-0919T124317/approve/proj  origin ../origin.git  393b6c8 → 951a678  pushes during tests 1
+  mcp      /private/var/folders/gk/sjhvp7853c53x3_gm0m4f30r0000gn/T/notyet-live/run-0919T124317/mcp/proj  origin ../origin.git  2f117e0 → 2f117e0  pushes during tests 0
+
+events:
+  12:43:32  approval_required  rejected   Bash                           git push --force origin main  force_push,protected_branch
+  12:45:30  approval_required  approved   Bash                           git push --force origin main  force_push,protected_branch
+  12:46:12  executed                      Bash                           tool_use toolu_01LAwyGy73jB6wnVGoAJRziJ
+  12:46:17  approval_required  rejected   mcp__notyet-demo__send_email   send_email(subject: "we shipped", recipient_count:  mass_send
+
+V1 CORE LIVE PROOF: PASS

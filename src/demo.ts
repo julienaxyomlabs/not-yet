@@ -82,7 +82,7 @@ export async function runDemo(argv: string[]): Promise<void> {
   const sql = "DELETE FROM customers WHERE inactive = 1";
   await step("run_sql(DELETE FROM customers …)", { tool: "mcp__notyet-demo__run_sql", input: { db, sql, environment: "production" }, cwd: repo }, () => DEMO_TOOLS.run_sql.run({ db, sql }));
   say("");
-  say(dim(`events → ${path.join(process.env.NOTYET_HOME!, "events.jsonl")}`));
+  say(dim(`events → ${transcriptPath ? "~/.notyet/events.jsonl" : path.join(process.env.NOTYET_HOME!, "events.jsonl")}`));
   say("");
   closeKeys();
   if (transcriptPath) fs.writeFileSync(transcriptPath, JSON.stringify(transcript, null, 1));

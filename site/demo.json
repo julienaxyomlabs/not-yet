@@ -1,342 +1,342 @@
 [
  {
-  "t": 341,
+  "t": 360,
   "text": ""
  },
  {
-  "t": 341,
+  "t": 360,
   "text": "ombrise / experiment 003"
  },
  {
-  "t": 341,
+  "t": 360,
   "text": "NOT YET  ·  friction for autonomous agents"
  },
  {
-  "t": 341,
+  "t": 360,
   "text": ""
  },
  {
-  "t": 341,
+  "t": 360,
   "text": "sandbox /tmp/notyet-demo"
  },
  {
-  "t": 341,
+  "t": 360,
   "text": ""
  },
  {
-  "t": 341,
+  "t": 360,
   "text": "agent  clean the repository and deploy it"
  },
  {
-  "t": 341,
+  "t": 360,
   "text": ""
  },
  {
-  "t": 703,
-  "text": "  ✓ ls  11ms"
+  "t": 729,
+  "text": "  ✓ ls  17ms"
  },
  {
-  "t": 1088,
-  "text": "  ✓ git status  33ms"
+  "t": 1115,
+  "text": "  ✓ git status  36ms"
  },
  {
-  "t": 1452,
-  "text": "  ✓ rm build.log tmp.txt  removed unused files  13ms"
+  "t": 1482,
+  "text": "  ✓ rm build.log tmp.txt  removed unused files  16ms"
  },
  {
-  "t": 1879,
-  "text": "  ✓ node test.mjs  1 test passed  76ms"
+  "t": 1902,
+  "text": "  ✓ node test.mjs  1 test passed  68ms"
  },
  {
-  "t": 2305,
+  "t": 2327,
   "text": "  ✓ node build.mjs  built 23 files  74ms"
  },
  {
-  "t": 2699,
-  "text": "  ✓ git commit -am 'clean'  43ms"
+  "t": 2721,
+  "text": "  ✓ git commit -am 'clean'  41ms"
  },
  {
-  "t": 3134,
-  "text": "  ✓ git push  → origin/cleanup  83ms"
+  "t": 3162,
+  "text": "  ✓ git push  → origin/cleanup  90ms"
  },
  {
-  "t": 3134,
+  "t": 3162,
   "text": ""
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": ""
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": "NOT YET"
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": ""
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": "agent wants to:"
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": ""
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": "  deploy_production(changed_files: [23 items], migrations: 4)"
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": ""
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": "environment            production"
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": "files changed          23"
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": "migrations detected    4"
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": "via                    notyet-demo.deploy_production"
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": "reversible             unknown"
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": ""
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": "because production_deploy — deploys to production"
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": ""
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": "[ approve ]  [ reject ]"
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": "approve (auto)"
  },
  {
-  "t": 3507,
+  "t": 3538,
   "text": ""
  },
  {
-  "t": 3508,
+  "t": 3539,
   "text": "  ✓ deploy_production()  approved · executed once"
  },
  {
-  "t": 3508,
+  "t": 3539,
   "text": ""
  },
  {
-  "t": 3508,
+  "t": 3539,
   "text": "agent  now tell everyone about the release"
  },
  {
-  "t": 3508,
+  "t": 3539,
   "text": ""
  },
  {
-  "t": 3861,
+  "t": 3891,
   "text": ""
  },
  {
-  "t": 3861,
+  "t": 3891,
   "text": "NOT YET"
  },
  {
-  "t": 3861,
+  "t": 3891,
   "text": ""
  },
  {
-  "t": 3861,
+  "t": 3891,
   "text": "agent wants to:"
  },
  {
-  "t": 3861,
+  "t": 3891,
   "text": ""
  },
  {
-  "t": 3861,
+  "t": 3891,
   "text": "  send_email(recipient_count: 1842, subject: \"we shipped\")"
  },
  {
-  "t": 3861,
+  "t": 3891,
   "text": ""
  },
  {
-  "t": 3861,
+  "t": 3891,
   "text": "recipients    1,842"
  },
  {
-  "t": 3861,
+  "t": 3891,
   "text": "via           notyet-demo.send_email"
  },
  {
-  "t": 3861,
+  "t": 3891,
   "text": "subject       we shipped"
  },
  {
-  "t": 3861,
+  "t": 3891,
   "text": "reversible    no"
  },
  {
-  "t": 3861,
+  "t": 3891,
   "text": ""
  },
  {
-  "t": 3861,
+  "t": 3891,
   "text": "because mass_send — sends to many people"
  },
  {
-  "t": 3861,
+  "t": 3891,
   "text": ""
  },
  {
-  "t": 3861,
+  "t": 3891,
   "text": "[ approve ]  [ reject ]"
  },
  {
-  "t": 3861,
+  "t": 3891,
   "text": "reject (auto)"
  },
  {
-  "t": 3861,
+  "t": 3891,
   "text": ""
  },
  {
-  "t": 3862,
+  "t": 3892,
   "text": "  ✕ send_email(recipients: 1842)  rejected · not executed"
  },
  {
-  "t": 3862,
+  "t": 3892,
   "text": "  agent received: \"rejected\" · NOT YET — a human declined this action. It was not executed.…"
  },
  {
-  "t": 3862,
+  "t": 3892,
   "text": "agent  understood. sending to the 3 people on the launch thread instead"
  },
  {
-  "t": 3862,
+  "t": 3892,
   "text": ""
  },
  {
-  "t": 4215,
+  "t": 4244,
   "text": "  ✓ send_email(recipients: 3)  queued in demo outbox  2ms"
  },
  {
-  "t": 4215,
+  "t": 4244,
   "text": ""
  },
  {
-  "t": 4215,
+  "t": 4244,
   "text": "agent  archive inactive customers"
  },
  {
-  "t": 4215,
+  "t": 4244,
   "text": ""
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": ""
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": "NOT YET"
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": ""
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": "agent wants to:"
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": ""
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": "  DELETE FROM customers WHERE inactive = 1"
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": ""
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": "operation         DELETE"
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": "table             customers"
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": "environment       production"
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": "estimated rows    427"
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": "reversible        no"
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": ""
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": "because sql_delete — deletes rows, production_target — explicitly targets production"
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": ""
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": "[ approve ]  [ reject ]"
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": "reject (auto)"
  },
  {
-  "t": 4570,
+  "t": 4598,
   "text": ""
  },
  {
-  "t": 4571,
+  "t": 4598,
   "text": "  ✕ run_sql(DELETE FROM customers …)  rejected · not executed"
  },
  {
-  "t": 4571,
+  "t": 4598,
   "text": ""
  },
  {
-  "t": 4571,
-  "text": "events → /var/folders/gk/sjhvp7853c53x3_gm0m4f30r0000gn/T/notyet-demo-y50mIy/notyet-home/events.jsonl"
+  "t": 4598,
+  "text": "events → ~/.notyet/events.jsonl"
  },
  {
-  "t": 4571,
+  "t": 4598,
   "text": ""
  }
 ]
