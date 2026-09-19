@@ -21,8 +21,12 @@ export function listPending(): Pending[] {
 }
 export function clearPending(id: string) { for (const f of [`${id}.json`, `${id}.decision.json`]) { try { fs.unlinkSync(path.join(pendingDir(), f)); } catch {} } }
 
-export function beat() { fs.mkdirSync(home(), { recursive: true }); fs.writeFileSync(heartbeat(), JSON.stringify({ pid: process.pid, at: Date.now() })); }
-export function watcherAlive(maxAgeMs = 6000): boolean { try { const h = JSON.parse(fs.readFileSync(heartbeat(), "utf8")); return Date.now() - h.at < maxAgeMs; } catch { return false; } }
+// Liveness is the heartbeat file's mtime, not its contents: mtime updates
+// atomically on every write, so a hook polling this can never catch a torn
+// read and mistake a live watcher for a dead one. The write is atomic too
+// (tmp + rename) for anything that reads the pid inside.
+export function beat() { fs.mkdirSync(home(), { recursive: true }); const f = heartbeat(); fs.writeFileSync(f + ".tmp", JSON.stringify({ pid: process.pid, at: Date.now() })); fs.renameSync(f + ".tmp", f); }
+export function watcherAlive(maxAgeMs = 6000): boolean { try { return Date.now() - fs.statSync(heartbeat()).mtimeMs < maxAgeMs; } catch { return false; } }
 
 export async function waitForDecision(id: string, timeoutMs: number): Promise<DecisionFile | null> {
   const t0 = Date.now();

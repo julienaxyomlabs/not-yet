@@ -3,14 +3,22 @@
   "version": "0.1.0",
   "description": "friction for autonomous agents. pause before consequential actions.",
   "type": "module",
-  "bin": { "notyet": "dist/cli.js" },
+  "bin": {
+    "notyet": "dist/cli.js"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json && chmod +x dist/cli.js",
     "test": "npm run build && node --test test/*.test.mjs",
-    "demo": "npm run build && node dist/cli.js demo"
+    "demo": "npm run build && node dist/cli.js demo",
+    "live:test": "npm run build && node test/live-agent.mjs"
   },
-  "engines": { "node": ">=22.13" },
-  "devDependencies": { "typescript": "^5.6.0", "@types/node": "^24.0.0" },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^24.0.0"
+  },
   "license": "MIT",
   "private": true
 }
