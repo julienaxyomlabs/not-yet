@@ -6,7 +6,7 @@
   "bin": { "notyet": "dist/cli.js" },
   "scripts": {
     "build": "tsc -p tsconfig.json && chmod +x dist/cli.js",
-    "test": "npm run build && node --test test/",
+    "test": "npm run build && node --test test/*.test.mjs",
     "demo": "npm run build && node dist/cli.js demo"
   },
   "engines": { "node": ">=22.13" },
