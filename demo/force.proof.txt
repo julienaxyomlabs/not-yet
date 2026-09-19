@@ -1,0 +1,21 @@
+{
+  "kind": "force",
+  "real_interception": true,
+  "session_id": "4d29fbd1-81a3-4368-b353-8ccf3bfb325a",
+  "proposed": [
+    "node test.mjs",
+    "node build.mjs",
+    "git push --force origin main"
+  ],
+  "policy_decision": "approval_required",
+  "reasons": [
+    "force_push",
+    "protected_branch"
+  ],
+  "human_decision": "rejected",
+  "executed_event": false,
+  "origin_before": "13fcc27bed1d5766c0f4a5ca2ad48dc28cbffdbc",
+  "origin_after": "13fcc27bed1d5766c0f4a5ca2ad48dc28cbffdbc",
+  "pushed": false,
+  "sandbox": "(disposable temp sandbox, removed after capture)"
+}

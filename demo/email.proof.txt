@@ -1,0 +1,18 @@
+{
+  "kind": "email",
+  "real_interception": true,
+  "session_id": "24944307-e5f6-4815-836a-5298f7f166cd",
+  "proposed": [
+    "mcp__notyet-demo__send_email"
+  ],
+  "policy_decision": "approval_required",
+  "reasons": [
+    "mass_send"
+  ],
+  "human_decision": "rejected",
+  "executed_event": false,
+  "origin_before": "f759cfe49795cf4e28c2e930d10c828e32c53e20",
+  "origin_after": "f759cfe49795cf4e28c2e930d10c828e32c53e20",
+  "pushed": false,
+  "sandbox": "(disposable temp sandbox, removed after capture)"
+}

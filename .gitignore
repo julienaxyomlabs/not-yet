@@ -4,3 +4,9 @@ dist/
 *.log
 site/.vercel/
 .vercel/
+
+# demo media (regenerate with demo/render.mjs from the committed casts)
+demo/*.mp4
+demo/*.png
+demo/*.webm
+demo/.*.html

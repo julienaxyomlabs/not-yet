@@ -1,0 +1,122 @@
+[
+ {
+  "t": 406,
+  "text": "dev@laptop  ~/app",
+  "cls": "dim"
+ },
+ {
+  "t": 406,
+  "text": "$ claude -p \"email everyone about the release\"",
+  "cls": ""
+ },
+ {
+  "t": 406,
+  "text": "",
+  "cls": ""
+ },
+ {
+  "t": 5744,
+  "text": "claude → send_email(recipient_count: 1842, subject: \"we shipped\")",
+  "cls": "run"
+ },
+ {
+  "t": 5862,
+  "text": "",
+  "cls": ""
+ },
+ {
+  "t": 5862,
+  "text": "NOT YET",
+  "cls": "bold"
+ },
+ {
+  "t": 5862,
+  "text": "",
+  "cls": ""
+ },
+ {
+  "t": 5862,
+  "text": "claude wants to:",
+  "cls": "dim"
+ },
+ {
+  "t": 5862,
+  "text": "",
+  "cls": ""
+ },
+ {
+  "t": 5862,
+  "text": "  send_email(subject: \"we shipped\", recipient_count: 1842)",
+  "cls": "bold"
+ },
+ {
+  "t": 5862,
+  "text": "",
+  "cls": ""
+ },
+ {
+  "t": 5862,
+  "text": "  recipients          1,842",
+  "cls": "fact"
+ },
+ {
+  "t": 5862,
+  "text": "  via                 notyet-demo.send_email",
+  "cls": "fact"
+ },
+ {
+  "t": 5862,
+  "text": "  subject             we shipped",
+  "cls": "fact"
+ },
+ {
+  "t": 5862,
+  "text": "  reversible          no",
+  "cls": "fact"
+ },
+ {
+  "t": 5862,
+  "text": "",
+  "cls": ""
+ },
+ {
+  "t": 5863,
+  "text": "  because mass_send: sends to many people",
+  "cls": "dim"
+ },
+ {
+  "t": 5863,
+  "text": "",
+  "cls": ""
+ },
+ {
+  "t": 5863,
+  "text": "  [ approve ]   [ reject ]",
+  "cls": "bold"
+ },
+ {
+  "t": 10065,
+  "text": "  reject",
+  "cls": "danger"
+ },
+ {
+  "t": 13170,
+  "text": "",
+  "cls": ""
+ },
+ {
+  "t": 13170,
+  "text": "claude   A human reviewer declined the mass send (1,842 recipients) via the safety hook, so the email wasn't sent — I won't retry it.",
+  "cls": "dim"
+ },
+ {
+  "t": 13170,
+  "text": "",
+  "cls": ""
+ },
+ {
+  "t": 13170,
+  "text": "no email was sent.",
+  "cls": "ok"
+ }
+]
