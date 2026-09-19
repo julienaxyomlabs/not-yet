@@ -1,0 +1,342 @@
+[
+ {
+  "t": 341,
+  "text": ""
+ },
+ {
+  "t": 341,
+  "text": "ombrise / experiment 003"
+ },
+ {
+  "t": 341,
+  "text": "NOT YET  ·  friction for autonomous agents"
+ },
+ {
+  "t": 341,
+  "text": ""
+ },
+ {
+  "t": 341,
+  "text": "sandbox /tmp/notyet-demo"
+ },
+ {
+  "t": 341,
+  "text": ""
+ },
+ {
+  "t": 341,
+  "text": "agent  clean the repository and deploy it"
+ },
+ {
+  "t": 341,
+  "text": ""
+ },
+ {
+  "t": 703,
+  "text": "  ✓ ls  11ms"
+ },
+ {
+  "t": 1088,
+  "text": "  ✓ git status  33ms"
+ },
+ {
+  "t": 1452,
+  "text": "  ✓ rm build.log tmp.txt  removed unused files  13ms"
+ },
+ {
+  "t": 1879,
+  "text": "  ✓ node test.mjs  1 test passed  76ms"
+ },
+ {
+  "t": 2305,
+  "text": "  ✓ node build.mjs  built 23 files  74ms"
+ },
+ {
+  "t": 2699,
+  "text": "  ✓ git commit -am 'clean'  43ms"
+ },
+ {
+  "t": 3134,
+  "text": "  ✓ git push  → origin/cleanup  83ms"
+ },
+ {
+  "t": 3134,
+  "text": ""
+ },
+ {
+  "t": 3507,
+  "text": ""
+ },
+ {
+  "t": 3507,
+  "text": "NOT YET"
+ },
+ {
+  "t": 3507,
+  "text": ""
+ },
+ {
+  "t": 3507,
+  "text": "agent wants to:"
+ },
+ {
+  "t": 3507,
+  "text": ""
+ },
+ {
+  "t": 3507,
+  "text": "  deploy_production(changed_files: [23 items], migrations: 4)"
+ },
+ {
+  "t": 3507,
+  "text": ""
+ },
+ {
+  "t": 3507,
+  "text": "environment            production"
+ },
+ {
+  "t": 3507,
+  "text": "files changed          23"
+ },
+ {
+  "t": 3507,
+  "text": "migrations detected    4"
+ },
+ {
+  "t": 3507,
+  "text": "via                    notyet-demo.deploy_production"
+ },
+ {
+  "t": 3507,
+  "text": "reversible             unknown"
+ },
+ {
+  "t": 3507,
+  "text": ""
+ },
+ {
+  "t": 3507,
+  "text": "because production_deploy — deploys to production"
+ },
+ {
+  "t": 3507,
+  "text": ""
+ },
+ {
+  "t": 3507,
+  "text": "[ approve ]  [ reject ]"
+ },
+ {
+  "t": 3507,
+  "text": "approve (auto)"
+ },
+ {
+  "t": 3507,
+  "text": ""
+ },
+ {
+  "t": 3508,
+  "text": "  ✓ deploy_production()  approved · executed once"
+ },
+ {
+  "t": 3508,
+  "text": ""
+ },
+ {
+  "t": 3508,
+  "text": "agent  now tell everyone about the release"
+ },
+ {
+  "t": 3508,
+  "text": ""
+ },
+ {
+  "t": 3861,
+  "text": ""
+ },
+ {
+  "t": 3861,
+  "text": "NOT YET"
+ },
+ {
+  "t": 3861,
+  "text": ""
+ },
+ {
+  "t": 3861,
+  "text": "agent wants to:"
+ },
+ {
+  "t": 3861,
+  "text": ""
+ },
+ {
+  "t": 3861,
+  "text": "  send_email(recipient_count: 1842, subject: \"we shipped\")"
+ },
+ {
+  "t": 3861,
+  "text": ""
+ },
+ {
+  "t": 3861,
+  "text": "recipients    1,842"
+ },
+ {
+  "t": 3861,
+  "text": "via           notyet-demo.send_email"
+ },
+ {
+  "t": 3861,
+  "text": "subject       we shipped"
+ },
+ {
+  "t": 3861,
+  "text": "reversible    no"
+ },
+ {
+  "t": 3861,
+  "text": ""
+ },
+ {
+  "t": 3861,
+  "text": "because mass_send — sends to many people"
+ },
+ {
+  "t": 3861,
+  "text": ""
+ },
+ {
+  "t": 3861,
+  "text": "[ approve ]  [ reject ]"
+ },
+ {
+  "t": 3861,
+  "text": "reject (auto)"
+ },
+ {
+  "t": 3861,
+  "text": ""
+ },
+ {
+  "t": 3862,
+  "text": "  ✕ send_email(recipients: 1842)  rejected · not executed"
+ },
+ {
+  "t": 3862,
+  "text": "  agent received: \"rejected\" · NOT YET — a human declined this action. It was not executed.…"
+ },
+ {
+  "t": 3862,
+  "text": "agent  understood. sending to the 3 people on the launch thread instead"
+ },
+ {
+  "t": 3862,
+  "text": ""
+ },
+ {
+  "t": 4215,
+  "text": "  ✓ send_email(recipients: 3)  queued in demo outbox  2ms"
+ },
+ {
+  "t": 4215,
+  "text": ""
+ },
+ {
+  "t": 4215,
+  "text": "agent  archive inactive customers"
+ },
+ {
+  "t": 4215,
+  "text": ""
+ },
+ {
+  "t": 4570,
+  "text": ""
+ },
+ {
+  "t": 4570,
+  "text": "NOT YET"
+ },
+ {
+  "t": 4570,
+  "text": ""
+ },
+ {
+  "t": 4570,
+  "text": "agent wants to:"
+ },
+ {
+  "t": 4570,
+  "text": ""
+ },
+ {
+  "t": 4570,
+  "text": "  DELETE FROM customers WHERE inactive = 1"
+ },
+ {
+  "t": 4570,
+  "text": ""
+ },
+ {
+  "t": 4570,
+  "text": "operation         DELETE"
+ },
+ {
+  "t": 4570,
+  "text": "table             customers"
+ },
+ {
+  "t": 4570,
+  "text": "environment       production"
+ },
+ {
+  "t": 4570,
+  "text": "estimated rows    427"
+ },
+ {
+  "t": 4570,
+  "text": "reversible        no"
+ },
+ {
+  "t": 4570,
+  "text": ""
+ },
+ {
+  "t": 4570,
+  "text": "because sql_delete — deletes rows, production_target — explicitly targets production"
+ },
+ {
+  "t": 4570,
+  "text": ""
+ },
+ {
+  "t": 4570,
+  "text": "[ approve ]  [ reject ]"
+ },
+ {
+  "t": 4570,
+  "text": "reject (auto)"
+ },
+ {
+  "t": 4570,
+  "text": ""
+ },
+ {
+  "t": 4571,
+  "text": "  ✕ run_sql(DELETE FROM customers …)  rejected · not executed"
+ },
+ {
+  "t": 4571,
+  "text": ""
+ },
+ {
+  "t": 4571,
+  "text": "events → /var/folders/gk/sjhvp7853c53x3_gm0m4f30r0000gn/T/notyet-demo-y50mIy/notyet-home/events.jsonl"
+ },
+ {
+  "t": 4571,
+  "text": ""
+ }
+]
